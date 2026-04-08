@@ -21,3 +21,5 @@ spec:
           env:
             - name: MYSQL_ROOT_PASSWORD
               vaule: qwer1234
+            - name: MYSQL_DATABASE
+              value: demo
