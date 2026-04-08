@@ -16,8 +16,8 @@ spec:
       containers:
         - name: demo-container
           image: docker.io/maranqian/demo:PLACEHOLDER
-          port:
+          ports:
             - containerPort: 8080
           envFrom:
             - configMapRef:
-                name: demo-config
+              name: demo-config
