@@ -1,13 +1,13 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mysql 
+  name: mysql
   namespace: demo
 spec:
   replicas: 1
   selector:
-  matchLabels:
-    app: mysql
+    matchLabels:
+      app: mysql
   template:
     metadata:
       labels:
@@ -20,6 +20,6 @@ spec:
             - containerPort: 3306
           env:
             - name: MYSQL_ROOT_PASSWORD
-              vaule: qwer1234!
+              value: qwer1234!
             - name: MYSQL_DATABASE
               value: demo
