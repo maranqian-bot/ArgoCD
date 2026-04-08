@@ -14,4 +14,4 @@ resources:
 images:
   - name: docker.io/maranqian/demo
     newName: docker.io/maranqian/demo
-    newTag: bf1bee3
+    newTag: b86fb6a
